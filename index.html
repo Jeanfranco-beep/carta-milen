@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Milen 💌</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="background-decorations">
+        <span class="star bg-star-1">★</span>
+        <span class="star bg-star-2">✦</span>
+        <span class="star bg-star-3">★</span>
+        <span class="star bg-star-4">✦</span>
+    </div>
+
+    <div class="book-container">
+        
+        <!-- PÁGINA 1: PORTADA -->
+        <div class="page active" id="page-1">
+            <div class="page-content">
+                <h1 class="title">Para Milen 💌</h1>
+                <p class="subtitle">Tengo algo que decirte…</p>
+                
+                <div class="polaroid-frame">
+                    <div class="tape-top"></div>
+                    <img src="milen.jpg" alt="Milen" class="milen-photo">
+                    <p class="polaroid-caption">MILEN ✧</p>
+                </div>
+
+                <div class="stars-doodle">
+                    <span class="star-draw s1">✦</span>
+                    <span class="star-draw s2">★</span>
+                    <span class="star-draw s3">✧</span>
+                </div>
+            </div>
+            <div class="page-footer">
+                <img src="foca.png" alt="Foca" class="seal-icon">
+                <span class="page-num">1 / 10</span>
+                <button class="next-btn" onclick="nextPage()">Comenzar →</button>
+            </div>
+        </div>
+
+        <!-- PÁGINA 2 -->
+        <div class="page" id="page-2">
+            <div class="page-content">
+                <h2>Milen, primero que nada…</h2>
+                <p>Sé que te has indignado conmigo por algunas cosas que dije o hice, y la verdad quería pedirte disculpas.</p>
+                <p>No quería que terminaras sintiéndote mal por mis comentarios.</p>
+            </div>
+            <div class="page-footer">
+                <button class="prev-btn" onclick="prevPage()">←</button>
+                <img src="foca.png" alt="Foca" class="seal-icon">
+                <span class="page-num">2 / 10</span>
+                <button class="next-btn" onclick="nextPage()">Siguiente →</button>
+            </div>
+        </div>
+
+        <!-- PÁGINA 3 -->
+        <div class="page" id="page-3">
+            <div class="page-content">
+                <h2>Y sí… tengo que hablar del pelo JAJA</h2>
+                <p>Lo de decir que tu pelo siempre está malogrado fue una broma.</p>
+                <p>Pero ahora que lo pienso, capaz no fue tan gracioso como yo creía 😭.</p>
+                <p class="highlight-text">Perdón por eso.</p>
+            </div>
+            <div class="page-footer">
+                <button class="prev-btn" onclick="prevPage()">←</button>
+                <img src="foca.png" alt="Foca" class="seal-icon">
+                <span class="page-num">3 / 10</span>
+                <button class="next-btn" onclick="nextPage()">Siguiente →</button>
+            </div>
+        </div>
+
+        <!-- PÁGINA 4 -->
+        <div class="page" id="page-4">
+            <div class="page-content">
+                <h2>Porque siendo sinceros…</h2>
+                <p>Tu pelo se ve bien todo el día.</p>
+                <p>No sé por qué se me ocurrió molestarte justamente con eso JAJA.</p>
+                <p>Tú sabes que a veces soy webón pe 😭</p>
+                <p>Pero ya, retiro lo dicho JAJA.</p>
+            </div>
+            <div class="page-footer">
+                <button class="prev-btn" onclick="prevPage()">←</button>
+                <img src="foca.png" alt="Foca" class="seal-icon">
+                <span class="page-num">4 / 10</span>
+                <button class="next-btn" onclick="nextPage()">Siguiente →</button>
+            </div>
+        </div>
+
+        <!-- PÁGINA 5 -->
+        <div class="page" id="page-5">
+            <div class="page-content">
+                <h2>Pero tampoco era solo por eso…</h2>
+                <p>Sé que hubo otras cosas por las que te molestaste conmigo, y entiendo que te hayan caído mal.</p>
+                <p>Quizás yo las tomé demasiado a la ligera.</p>
+            </div>
+            <div class="page-footer">
+                <button class="prev-btn" onclick="prevPage()">←</button>
+                <img src="foca.png" alt="Foca" class="seal-icon">
+                <span class="page-num">5 / 10</span>
+                <button class="next-btn" onclick="nextPage()">Siguiente →</button>
+            </div>
+        </div>
+
+        <!-- PÁGINA 6 -->
+        <div class="page" id="page-6">
+            <div class="page-content">
+                <h2>Así que perdón, Milen.</h2>
+                <p>No te lo digo simplemente para quedar bien.</p>
+                <p>Sí me puse a pensar en cómo pudieron hacerte sentir mis comentarios, y debí tener más cuidado.</p>
+            </div>
+            <div class="page-footer">
+                <button class="prev-btn" onclick="prevPage()">←</button>
+                <img src="foca.png" alt="Foca" class="seal-icon">
+                <span class="page-num">6 / 10</span>
+                <button class="next-btn" onclick="nextPage()">Siguiente →</button>
+            </div>
+        </div>
+
+        <!-- PÁGINA 7 -->
+        <div class="page" id="page-7">
+            <div class="page-content">
+                <h2>Prometo pensar dos veces antes de hacer una broma.</h2>
+                <p>Bueno…</p>
+                <p><b>tres veces. 😭</b></p>
+                <p>Qsy, simplemente soy webón 🐒</p>
+            </div>
+            <div class="page-footer">
+                <button class="prev-btn" onclick="prevPage()">←</button>
+                <img src="foca.png" alt="Foca" class="seal-icon">
+                <span class="page-num">7 / 10</span>
+                <button class="next-btn" onclick="nextPage()">Siguiente →</button>
+            </div>
+        </div>
+
+        <!-- PÁGINA 8 -->
+        <div class="page" id="page-8">
+            <div class="page-content">
+                <h2>Ya hablando en serio…</h2>
+                <p>No quiero que te quedes con la idea de que lo dije para hacerte sentir mal.</p>
+                <p>Me caes bien y por eso mismo me importa arreglar las cosas cuando me equivoco.</p>
+                <p class="highlight-text">Perdón por las veces que te hice sentir incómoda.</p>
+            </div>
+            <div class="page-footer">
+                <button class="prev-btn" onclick="prevPage()">←</button>
+                <img src="foca.png" alt="Foca" class="seal-icon">
+                <span class="page-num">8 / 10</span>
+                <button class="next-btn" onclick="nextPage()">Siguiente →</button>
+            </div>
+        </div>
+
+        <!-- PÁGINA 9 -->
+        <div class="page" id="page-9">
+            <div class="page-content">
+                <h2>Y para que quede registrado oficialmente:</h2>
+                <div class="official-box">
+                    <p><b>⭐ Milen tiene el pelo bonito. ⭐</b></p>
+                    <p>Todo el día.<br>Sin importar la hora.<br>Sin importar el clima.</p>
+                </div>
+                <p>Y esta vez no estoy haciendo una broma JAJA.</p>
+            </div>
+            <div class="page-footer">
+                <button class="prev-btn" onclick="prevPage()">←</button>
+                <img src="foca.png" alt="Foca" class="seal-icon">
+                <span class="page-num">9 / 10</span>
+                <button class="next-btn" onclick="nextPage()">Siguiente →</button>
+            </div>
+        </div>
+
+        <!-- PÁGINA 10: FINAL -->
+        <div class="page" id="page-10">
+            <div class="page-content final-content">
+                <h2>¿Me perdonas? 🥺</h2>
+                <p>Prometo no volver a declarar que tu pelo está malogrado.</p>
+                <p>Bueno… probablemente no. 😂</p>
+
+                <div class="big-seal-container">
+                    <img src="foca.png" alt="Foca Grande" class="big-seal-img">
+                    <span class="floating-star fs1">✦</span>
+                    <span class="floating-star fs2">★</span>
+                    <span class="floating-star fs3">✧</span>
+                </div>
+
+                <p class="final-text">Fin de mi pequeña carta 🦭</p>
+            </div>
+            <div class="page-footer">
+                <button class="prev-btn" onclick="prevPage()">←</button>
+                <img src="foca.png" alt="Foca" class="seal-icon">
+                <span class="page-num">10 / 10</span>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

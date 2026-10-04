@@ -1,0 +1,229 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f6f0ea;
+    font-family: 'Caveat', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+    color: #4a4238;
+}
+
+/* Fondo decorativo con estrellas */
+.background-decorations .star {
+    position: absolute;
+    color: #c9b6e4;
+    font-size: 1.8rem;
+    opacity: 0.6;
+}
+.bg-star-1 { top: 8%; left: 10%; color: #b5d8f7; }
+.bg-star-2 { top: 15%; right: 12%; color: #f2c6de; }
+.bg-star-3 { bottom: 10%; left: 8%; color: #ded3f5; }
+.bg-star-4 { bottom: 12%; right: 10%; color: #b5d8f7; }
+
+/* Contenedor del Libro */
+.book-container {
+    width: 90%;
+    max-width: 380px;
+    height: 600px;
+    background: #fffdf9;
+    border-radius: 18px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08), 0 2px 6px rgba(0, 0, 0, 0.04);
+    border: 1px solid #efe8dc;
+    position: relative;
+    padding: 24px 20px 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Páginas */
+.page {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    animation: fadeIn 0.4s ease-in-out;
+}
+
+.page.active {
+    display: flex;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(4px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.page-content {
+    text-align: center;
+    font-size: 1.35rem;
+    line-height: 1.4;
+    color: #433c35;
+}
+
+h1.title {
+    font-size: 2.3rem;
+    color: #3b332c;
+    margin-bottom: 2px;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 12px;
+    color: #3e362e;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: #7c7267;
+    margin-bottom: 15px;
+}
+
+/* Estilo Polaroid de la Portada */
+.polaroid-frame {
+    background: #ffffff;
+    padding: 10px 10px 15px;
+    border: 1px solid #e2dad0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+    transform: rotate(-3deg);
+    width: 80%;
+    margin: 10px auto;
+    position: relative;
+}
+
+.tape-top {
+    position: absolute;
+    top: -10px;
+    left: 35%;
+    width: 50px;
+    height: 15px;
+    background: rgba(220, 210, 195, 0.6);
+    transform: rotate(2deg);
+}
+
+.milen-photo {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.polaroid-caption {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 700;
+    margin-top: 8px;
+    color: #655b50;
+    letter-spacing: 1px;
+}
+
+/* Estrellas dibujadas */
+.stars-doodle {
+    margin-top: 5px;
+}
+.star-draw {
+    font-size: 1.2rem;
+    margin: 0 5px;
+}
+.s1 { color: #b7a0d8; }
+.s2 { color: #9bbfe0; }
+.s3 { color: #f0b8d4; }
+
+.highlight-text {
+    font-weight: bold;
+    color: #2b2520;
+}
+
+.official-box {
+    border: 2px dashed #c0b2d6;
+    background: #fdfaf6;
+    padding: 12px;
+    border-radius: 12px;
+    margin: 15px 0;
+}
+
+/* Foca Gigante con Animación (Página 10) */
+.big-seal-container {
+    position: relative;
+    margin: 15px auto;
+    width: 140px;
+}
+
+.big-seal-img {
+    width: 120px;
+    height: auto;
+    animation: bounce 2s infinite ease-in-out;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-10px) rotate(3deg); }
+}
+
+.floating-star {
+    position: absolute;
+    animation: pulse 1.5s infinite alternate;
+}
+.fs1 { top: 0; left: -10px; color: #b7a0d8; font-size: 1.5rem; }
+.fs2 { top: 20px; right: -10px; color: #9bbfe0; font-size: 1.3rem; }
+.fs3 { bottom: 0; left: 10px; color: #f0b8d4; font-size: 1.4rem; }
+
+@keyframes pulse {
+    from { opacity: 0.4; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1.1); }
+}
+
+.final-text {
+    font-size: 1.2rem;
+    color: #706559;
+    margin-top: 10px;
+}
+
+/* Pie de página */
+.page-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px dashed #ebdcd0;
+    padding-top: 10px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.seal-icon {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+}
+
+.page-num {
+    font-size: 0.8rem;
+    color: #9c9083;
+}
+
+/* Botones */
+button {
+    background-color: #f3e8de;
+    border: 1px solid #d8c8b8;
+    color: #52473c;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+button:hover {
+    background-color: #e8dacd;
+}
